@@ -1,29 +1,24 @@
 #! /bin/bash
 
 username="ammar"
-groupname="Ammar"
+groupname="ammar"
 
-if [ $# -ne 2 ]
-then 
-	echo "Usage : '$0' username groupname"
-	exit 1
-fi
 
-if [ [$( cat /etc/passwd | grep $1 | cut -d: -f1) = $1 ]]
+if [[ $( cat /etc/passwd | grep ammar | cut -d: -f1) = ammar ]]
 then 
 	echo "this user exists:"
-	echo $( cat /etc/passwd | grep $1)
+	echo $( cat /etc/passwd | grep ammar)
 else
-	useradd $1
-	echo $( cat /etc/passwd | grep $1)
+	useradd ammar
+	echo $( cat /etc/passwd | grep ammar)
 fi
 
 
-if [ [$( cat /etc/group | grep $2 | cut -d: -f1) = $2 ]]
-then 
+if [[ $( cat /etc/group | grep ammar | cut -d: -f1) = ammar ]]
+then  
 	echo "this group exists:"
-	echo $( cat /etc/group | grep $2)
+	echo $( cat /etc/group | grep ammar)
 else
-	groupadd $1
-	echo $( cat /etc/group | grep $2)
+	groupadd ammar
+	echo $( cat /etc/group | grep ammar)
 fi
