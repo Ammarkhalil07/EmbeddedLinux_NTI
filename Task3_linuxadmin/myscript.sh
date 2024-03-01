@@ -5,7 +5,7 @@ then
  export HELLO=$HOSTNAME
  	printenv HELLO
  	
- 	LOCAL = $(whoami)
+ 	LOCAL=$(whoami)
  	echo $LOCAL
  	sh
  fi
