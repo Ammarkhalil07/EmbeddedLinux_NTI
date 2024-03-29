@@ -91,11 +91,11 @@ DISK=$(sudo losetup -f --show --partscan ~/sdCard/sd.img)
 export DISK
 
 if sudo mount ${DISK}p1 ~/sdCard/sd; then
-echo "<Eng.TERA Message> Mounting p1 to sd is done Successfully!"
+echo "Mounting p1 to sd is done Successfully!"
 fi
 
 if sudo mount ${DISK}p2 ~/sdCard/sd2; then
-echo "<Eng.TERA Message> Mounting p2 to sd is done Successfully!"
+echo "Mounting p2 to sd is done Successfully!"
 fi
 
 bash
