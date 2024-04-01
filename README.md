@@ -2,7 +2,6 @@
 
 
 ---
-
 # NTI Embedded Linux Repository
 
 Welcome to NTI Embedded Linux Repository!
