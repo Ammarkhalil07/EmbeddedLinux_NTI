@@ -94,7 +94,7 @@ cp linux/arch/arm/boot/dts/*-ca9.dtb /srv/tftp/
 ```
 
 
-Start Qemu to boot on U-boot ( Using script i made on Task.4.1 ):
+Start Qemu to boot on U-boot:
 
 ```bash
 bashscript_QemuStartUboot ~/u-boot/u-boot ~/sdCard/sd.img ~/sdCard/tftp_bash
@@ -108,6 +108,8 @@ Set the bootargs:
 bootargs=console=ttyAMA0 root=/dev/mmcblk0p2 rootfstype=ext4 rw rootwait init=/sbin/init
 saveenv
 ```
+you could set the init process as you like as **example** `init=/bin/sh`
+
 ---
 
 ## Using my own Bash Scripts
@@ -118,9 +120,10 @@ Using **"ubootScript_imageLoading"** Script:
 - Load kernel image `zImage`, DTB `vexpress-v2p-ca9.dtb` from TFTP into RAM and then boot the kernel with its device tree.
 
 ```bash
-setenv ipaddr 100.101.102.102
-setenv serverip 100.101.102.100
+setenv ipaddr 192.168.1.102
+setenv serverip 192.168.1.100
 
+#intial value to LOAD_SUCCESS to false 
 setenv LOAD_SUCCESS "false"
 
 setenv LOAD_FROM_SERVER 'echo "Loading from Server.."; if tftp $kernel_addr_r zImage; then if tftp $fdt_addr_r vexpress-v2p-ca9.dtb; then echo "Loading zImage and dtb from Server is DONE!"; bootz $kernel_addr_r - $fdt_addr_r; else echo "Failed to load dtb from server"; fi; else echo "Failed to load zImage from Server!"; setenv LOAD_SUCCESS "true"; fi'
