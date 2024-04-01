@@ -50,7 +50,7 @@ In the configuration, ensure the following requirements are met:
 - Change **system banner**
 - Apply **root password**
 - Enable **C++ Support**
-
+- Enable **vim**
 
 Configure SSH:
 
@@ -59,6 +59,7 @@ To configure SSH and add the executable in rootfs in Buildroot:
 - Enable in **Network application** configure **dropbear**
 - Set **Root password** in **system configuration**
 
+**Note** : you could enable the ssh by edit on `.conifg` file but the `dropbear` is a smaller package with the same purpose.
 ---
 
 ## Build the System
@@ -160,7 +161,7 @@ Then inside `Config.in` file insert these lines:
 config BR2_PACKAGE_MY_PACKAGE
     bool "my_package"
     help
-      Hello World Package
+      app Package
 ```
 ---
 
