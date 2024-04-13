@@ -23,7 +23,7 @@ Before using the qemux86 target, ensure you have the following prerequisites ins
 To clone the OpenEmbedded repository, follow these steps:
 
 1. Open a terminal window.
-2. Navigate to the directory where you want to clone OpenEmbedded.
+2. Navigate to the directory where you want to clone Poky.
 3. Run the following command:
 ```bash
 git clone -b dunfell git://git.yoctoproject.org/poky.git --depth=1
