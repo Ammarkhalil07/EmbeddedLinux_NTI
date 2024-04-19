@@ -81,9 +81,6 @@ If you're interested in writing your own device driver for Linux, follow these s
 6. **Test and Debug:** Test your driver code on a Linux system, debug any issues, and refine the code as needed.
 7. **Contribute:** Consider contributing your driver to the Linux kernel community once it's stable and functional.
 
-## License
-This device driver is released under the [insert license here] license. See the LICENSE file for more details.
-
 ## Support and Feedback
 For questions, bug reports, or feature requests related to this device driver, please [insert contact information here].
 
