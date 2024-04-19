@@ -1,7 +1,7 @@
 # Linux Device Driver
 
 ## Introduction
-This repository contains a device driver for [Device Name]. The driver enables communication between the Linux kernel and the [Device Name] hardware, facilitating its integration into Linux-based systems.
+This repository contains a device drivers . The driver enables communication between the Linux kernel and the hardware, facilitating its integration into Linux-based systems.
 
 ## Contents
 - `driver/`: Contains the source code for the device driver.
@@ -82,5 +82,5 @@ If you're interested in writing your own device driver for Linux, follow these s
 7. **Contribute:** Consider contributing your driver to the Linux kernel community once it's stable and functional.
 
 ## Support and Feedback
-For questions, bug reports, or feature requests related to this device driver, please [insert contact information here].
+For questions, bug reports, or feature requests related to this device driver, please contact with me via email or linkedin.
 
