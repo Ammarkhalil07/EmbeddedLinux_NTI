@@ -72,9 +72,8 @@ If you're interested in writing your own device driver for Linux, follow these s
             "cppStandard": "gnu++17",
             "intelliSenseMode": "linux-gcc-x64"
         }
-    ],
-    "version": 4
-    }
+         "version": 4
+    ]
     ```
 
 4. **Choose Hardware:** Select a hardware device for which you want to write a driver. Start with a simple device to grasp the fundamentals.
