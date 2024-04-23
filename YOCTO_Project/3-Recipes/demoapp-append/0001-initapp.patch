@@ -51,7 +51,7 @@ index 0000000..37149d7
 ++{
 ++	while(1)
 ++	{
-++		puts("\n Deamon is up and running \n");
+++		puts("\n Hello,Demo app is up and running \n");
 ++		sleep(4);
 ++	}
 ++
