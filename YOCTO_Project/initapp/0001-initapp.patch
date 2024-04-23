@@ -1,0 +1,45 @@
+From 8e543196acf641bea1809a24468f355d1bad2723 Mon Sep 17 00:00:00 2001
+From: ammarkhalil07 <ammarkhalil707@gmail.com>
+Date: Tue, 23 Apr 2024 11:14:58 +0200
+Subject: [PATCH] initapp
+
+---
+ YOCTO_Project/initapp/cMakeLists.txt |  5 +++++
+ YOCTO_Project/initapp/demoapp.c      | 12 ++++++++++++
+ 2 files changed, 17 insertions(+)
+ create mode 100644 YOCTO_Project/initapp/cMakeLists.txt
+ create mode 100644 YOCTO_Project/initapp/demoapp.c
+
+diff --git a/YOCTO_Project/initapp/cMakeLists.txt b/YOCTO_Project/initapp/cMakeLists.txt
+new file mode 100644
+index 0000000..8423741
+--- /dev/null
++++ b/YOCTO_Project/initapp/cMakeLists.txt
+@@ -0,0 +1,5 @@
++cmake_minimum_required(VERSION 3.22)
++project(HELLODEAMON)
++add_executable(hellodeamon deamonapp.c)
++set(CMAKE_C_COMPILER "/home/ammar/x-tools/arm-cortexa9_neon-linux-gnueabihf/bin/arm-cortexa9_neon-linux-gnueabihf-gcc")
++set(CMAKE_EXE_LINKER_FLAGS "-static")
+diff --git a/YOCTO_Project/initapp/demoapp.c b/YOCTO_Project/initapp/demoapp.c
+new file mode 100644
+index 0000000..94d9c63
+--- /dev/null
++++ b/YOCTO_Project/initapp/demoapp.c
+@@ -0,0 +1,12 @@
++#include <stdio.h>
++#include <unistd.h>
++
++int main(void)
++{
++	while(1)
++	{
++		puts("\n Deamon is up and running \n");
++		sleep(4);
++	}
++
++}
+\ No newline at end of file
+-- 
+2.34.1
+
